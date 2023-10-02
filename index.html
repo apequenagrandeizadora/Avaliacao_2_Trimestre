@@ -6,6 +6,7 @@
     <title>Olga floricultura</title>
     <link rel="shortcut icon" href="img/Girassol_icon.jpeg"/>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,11 +56,7 @@
             </span>
             <div class="div-imagem">
                 <img class="Imagem" src="img/flor.jpg" alt="">
-                <h1 class="titulo">Flores raras</h1>
-            </div>
     
-            <div class="div-imagem">
-                <img class="Imagem" src="img/girassol.jpg" alt="">
                 <h1 class="titulo">Girassol</h1>
             </div>
             <div class="div-imagem">
@@ -67,27 +64,49 @@
                 <h1 class="titulo">Buques</h1>
             </div>
             <span>
-            </span>
-            <span>
-            </span>
             <div class="div-imagem">
-                <img class="Imagem" src="img/flores.jpg" alt="">
-                <h1 class="titulo">Flor</h1>
-            </div>
-            <div class="div-imagem">
-                <img class="Imagem" src="img/horta.jpg" alt="">
                 <h1 class="titulo">Faça sua horta</h1>
-            </div>
-            <div class="div-imagem">
                 <img class="Imagem" src="img/arvore.jpg" alt="">
-                <h1 class="titulo">Árvores</h1>
-            </div>   
+       
+  
         </div>
         
     </section>
     <div id="frase">
             <p>Que sua alma tenha o perfume de uma flor e atraia apenas pessoas leves como as borboletas!</p>
         </div>
+        <section>
+            <section class="carrossel">
+                <h2 class="carrossel__titulo">ultimos lançamentos</h2>
+                     <!--slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img/1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/4.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/5.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/6.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/7.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/8.jpg" alt=""></div>
+                        ...
+                        <div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation button -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+
+                    </div>
+         </section>
+      
+        </section>
     <div id="Rodape">
         <div class="navegacao">
             <h2>Navegação</h2>
@@ -123,5 +142,16 @@
         </div>
             
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>  
+    <script>
+        const swiper = new Swiper('.swiper', {
+              spaceBetween: 10,
+              slidesPerView:3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+          });
+        </script>
 </body>
 </html>
